@@ -135,32 +135,6 @@ By following this approach, you can build a clean, maintainable, and scalable ap
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @Composable
 fun WeatherScreen(viewModel: WeatherViewModel) {
     var city by remember { mutableStateOf("") }
@@ -313,11 +287,11 @@ fun WeatherDetails(data: WeatherModel) {
 }
 
 @Composable
-fun WeatherKeyValue(key: String, value: String) {
+fun WeatherKeyValue(key: String, value: String){
     Column(
         modifier = Modifier.padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    ) {
+    ){
         Text(text = key, fontSize = 20.sp, fontWeight = FontWeight.Bold)
         Text(text = value, fontWeight = FontWeight.SemiBold, color = Color.DarkGray)
     }
